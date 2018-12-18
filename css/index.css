@@ -1,0 +1,468 @@
+html,
+body,
+.main-wrap,
+.swiper-container,
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+html {
+    font-size: 100px;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide img {
+    position: absolute;
+}
+
+.arrow {
+    position: absolute;
+    bottom: .8rem;
+    left: 46%;
+    width: .61rem;
+    height: .44rem;
+    z-index: 99;
+    background: url("../img/arrow.png") no-repeat;
+    background-size: 100%;
+    animation: bounce 3s linear 0s infinite both;
+}
+
+/*page-1 start*/
+
+.page-1, .page-2, .page-3, .page-4 {
+    background: url("../img/bg1.jpg") no-repeat left top;
+    background-size: cover;
+}
+
+.page-1 {
+    text-align: center;
+}
+
+.page-1-resume {
+    width: 4.55rem;
+    top: 1.6rem;
+    left: 50%;
+    margin-left: -2.275rem;
+}
+
+.page-1-head {
+    padding-top: 3.4rem;
+}
+
+.page-1-head-text {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 0.18rem 0.4rem;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px #000;
+    text-shadow: 3px 3px 5px #000;
+}
+
+.page-1-avatar {
+    position: relative;
+    margin-top: .6rem;
+    height: 2.98rem;
+}
+
+.page-1-avatar > img {
+    left: 50%;
+}
+
+.page-1-avatar .circle {
+    width: 2.98rem;
+    margin-left: -1.49rem;
+}
+
+.page-1-avatar .avatar {
+    width: 2.73rem;
+    top: .13rem;
+    margin-left: -1.365rem;
+}
+
+.page-l-footer {
+    margin-top: 1rem;
+    line-height: .2rem;
+    font-size: 6px;
+    color: #505050;
+}
+
+/*动态设置id，然后给对应的id添加动画每次切换保证都有动画执行*/
+#page1 .page-1-resume {
+    animation: bounceInDown 1s linear;
+}
+
+#page1 .page-1-head-text {
+    animation: fadeIn 2s linear 1s 1 both;
+}
+
+#page1 .circle {
+    animation: rotate 3s linear infinite both;
+}
+
+#page1 .avatar {
+    animation: fadeIn 1s linear both;
+}
+
+/*page-1 end*/
+
+/*page-2 start*/
+.page-2-bg {
+    width: 6.4rem;
+}
+
+.page-2-info {
+    width: 4rem;
+    height: 2rem;
+    margin: 1.6rem 0 1rem;
+    padding-left: .4rem;
+    border-radius: 0 2rem 2rem 0;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 3px 3px 5px #2d2d2d;
+    opacity: 0;
+}
+
+.page-2-info-title {
+    font-size: .48rem;
+    font-weight: 700;
+    color: #1e92c0;
+    height: .6rem;
+    line-height: .6rem;
+    padding-top: .2rem;
+}
+
+.page-2-info-desc {
+    font-size: .32rem;
+    margin-top: .1rem;
+    text-decoration: underline;
+}
+
+.page-2-skill {
+    padding-left: .4rem;
+    opacity: 0;
+}
+
+.page-2-skill h3 {
+    padding-bottom: .3rem;
+    font-size: .36rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px #000;
+    color: #fff;
+}
+
+.page-2-skill-desc {
+    width: 85%;
+    font-size: .28rem;
+    padding-bottom: .3rem;
+    color: #ededed;
+}
+
+#page2 .page-2-info {
+    animation: bounceInLeft 1s linear both;
+}
+
+#page2 .page-2-skill {
+    animation: fadeIn 1s linear 1s both;
+}
+
+/*page-2 end*/
+
+/*page-3 start*/
+.page-3-content, .page-4-content {
+    width: 100%;
+    height: 100%;
+    padding: 1rem .35rem;
+    overflow: hidden;
+    color: #fff;
+}
+
+.page-3-title {
+    font-size: .42rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+}
+
+.page-3-project {
+    width: 85%;
+}
+
+.page-3-project > li {
+    opacity: 0;
+}
+
+.page-3-project-title {
+    font-size: .32rem;
+    color: #f10808;
+    font-weight: 700;
+    margin-bottom: .1rem;
+}
+
+.page-3-project-desc {
+    position: relative;
+    font-size: .26rem;
+    height: 1.5rem;
+}
+
+.page-3-project-desc .line {
+    position: absolute;
+    top: .26rem;
+    width: .2rem;
+    height: 1px;
+    background: #fff;
+}
+
+.page-3-project-desc .content {
+    position: absolute;
+    left: .25rem;
+    top: .1rem;
+}
+
+.ellipsis {
+    font-weight: 700;
+    font-size: .4rem;
+}
+
+#page3 .page-3-project > li:nth-child(1) {
+    animation: fadeIn 1s linear both;
+}
+
+#page3 .page-3-project > li:nth-child(2) {
+    animation: fadeIn 1s linear 1s both;
+}
+
+#page3 .page-3-project > li:nth-child(3) {
+    animation: fadeIn 1s linear 2s both;
+}
+
+#page3 .page-3-project > li:nth-child(4) {
+    animation: fadeIn 1s linear 3s both;
+}
+
+/*page-3 end*/
+
+/*page-4 start*/
+
+.page-4-content {
+    padding-left: .7rem;
+    opacity: 0;
+}
+
+.page-4-url {
+    font-size: .4rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.page-4-content .page-4-github-img {
+    position: static;
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.page-4-github-url {
+    display: block;
+    height: .4rem;
+    margin-top: .2rem;
+    font-size: .32rem;
+    color: #fff;
+}
+
+.page-4-content .line {
+    width: 2rem;
+    height: 1px;
+    background: #fff;
+    margin-bottom: .5rem;
+}
+
+.page-4-tel > p {
+    font-size: .4rem;
+    margin-bottom: .5em;
+    color: #f10808;
+}
+
+.page-4-tel > p > a, .page-4-tel > p > span {
+    color: #fff;
+}
+
+.page-4-footer {
+    margin-top: 2.2rem;
+}
+
+.page-4-footer .thanks {
+    font-size: .4rem;
+    font-weight: 700;
+    margin-bottom: .15rem;
+}
+
+.page-4-footer > p {
+    text-decoration: underline;
+}
+
+#page4 .page-4-content {
+    animation: fadeIn 1s linear both;
+}
+
+/*page-4 end*/
+
+.audio {
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    width: .6rem;
+    height: .6rem;
+    background: url("../audio/music.svg") no-repeat;
+    background-size: .6rem .6rem;
+    z-index: 99;
+}
+
+.audio-rotate {
+    animation: rotate 3s linear infinite both;
+}
+
+/*animation*/
+@keyframes bounce {
+    from, 20%, 53%, 80%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: .3;
+    }
+
+    40%, 43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+        opacity: .8;
+    }
+
+    90% {
+        -webkit-transform: translate3d(0,-4px,0);
+        transform: translate3d(0,-4px,0);
+    }
+}
+
+@keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translateX(-52%);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(90deg);
+    }
+
+    60% {
+        transform: rotate(180deg);
+    }
+
+    80% {
+        transform: rotate(260deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bounceInLeft {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
