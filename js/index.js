@@ -63,17 +63,19 @@ let init = (function () {
       }
     }, false);
 
+    // 解决iphone在微信不能自动播放
+    domAudio.addEventListener('WeixinJSBridgeReady', controlMusic, false)
+
     // 控制音乐参数
     function controlMusic() {
       domAudio.volume = 0.2;
-      console.log(domAudio);
       domAudio.play();
       domAudio.addEventListener('canplay', function () {
         domMusic.className = 'audio audio-rotate';
       }, false)
     }
 
-    window.setTimeout(controlMusic, 1000)
+    controlMusic()
   }
 
 

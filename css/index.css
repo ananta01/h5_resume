@@ -45,13 +45,13 @@ html {
 
 .page-1-resume {
     width: 4.55rem;
-    top: 1.6rem;
+    top: 1.3rem;
     left: 50%;
     margin-left: -2.275rem;
 }
 
 .page-1-head {
-    padding-top: 3.4rem;
+    padding-top: 3.1rem;
 }
 
 .page-1-head-text {
@@ -90,7 +90,7 @@ html {
     margin-top: 1rem;
     line-height: .2rem;
     font-size: 6px;
-    color: #505050;
+    color: #404040;
 }
 
 /*动态设置id，然后给对应的id添加动画每次切换保证都有动画执行*/
